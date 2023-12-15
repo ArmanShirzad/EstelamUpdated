@@ -1,0 +1,89 @@
+﻿    @page "/Result"
+    @model EstelamIsargari.Pages.ResponsePage
+    @{
+    }
+    <html dir="rtl" lang="fa">
+    <head>
+            <!-- Include Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- Include your custom CSS file here -->
+        <link rel="stylesheet" href="~/css/SecondStyle.css">
+    </head>
+    <body>
+        <div class="container">
+    <h1 class="text-right">جزئیات استعلام</h1>
+
+    @if (Model.apiResponse != null)
+    {   
+        @*    <div class="response-details">
+                <div class="list-item">
+                <p>کد ملی متقاضی: @Model.apiResponse.ApplicantId</p>
+                <p>آیا ایثارگر اسیر است؟: <span class="yes">@(Model.apiResponse.IsAsr ? "بله" : "خیر")</span></p>
+                <p>آیا ایثارگر آزاده است؟: <span class="yes">@(Model.apiResponse.IsAzd ? "بله" : "خیر")</span></p>
+                <p>آیا ایثارگر جانباز است؟: <span class="yes">@(Model.apiResponse.IsJbz ? "بله" : "خیر")</span></p>
+                <p>آیا ایثارگر مفقود الاثر است؟: <span class="yes">@(Model.apiResponse.IsMfq ? "بله" : "خیر")</span></p>
+                <p>آیا ایثارگر شهید است؟: <span class="yes">@(Model.apiResponse.IsShd ? "بله" : "خیر")</span></p>
+                </div>
+            </div>*@
+                <div class="table-container">
+    <table class="table custom-table">
+        <thead>
+            <tr>
+                <th>مورد</th>
+                <th>توضیحات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>کد ملی متقاضی</td>
+                <td>@Model.apiResponse.ApplicantId</td>
+            </tr>
+            <tr>
+                <td>آیا ایثارگر اسیر است؟</td>
+                <td><span class="yes">@(Model.apiResponse.IsAsr ? "بله" : "خیر")</span></td>
+            </tr>
+            <tr>
+                <td>آیا ایثارگر آزاده است؟</td>
+                <td><span class="yes">@(Model.apiResponse.IsAzd ? "بله" : "خیر")</span></td>
+            </tr>
+            <tr>
+                <td>آیا ایثارگر جانباز است؟</td>
+                <td><span class="yes">@(Model.apiResponse.IsJbz ? "بله" : "خیر")</span></td>
+            </tr>
+            <tr>
+                <td>آیا ایثارگر مفقود الاثر است؟</td>
+                <td><span class="yes">@(Model.apiResponse.IsMfq ? "بله" : "خیر")</span></td>
+            </tr>
+            <tr>
+                <td>آیا ایثارگر شهید است؟</td>
+                <td><span class="yes">@(Model.apiResponse.IsShd ? "بله" : "خیر")</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+            <a class="btn btn-primary float-right" href="/">بازگشت به صفحه اصلی</a>
+
+                <!-- Add export and copy icons here -->
+                <div class="export-icons">
+                    <!-- Export to Text -->
+                    <i class="fas fa-file-alt"></i>
+                
+                    <!-- Export to Excel -->
+                    <i class="fas fa-file-excel"></i>
+                
+                    <!-- Export to Word -->
+                    <i class="fas fa-file-word"></i>
+                
+                    <!-- Copy to Clipboard -->
+                    <i class="fas fa-copy"></i>
+                </div>
+    }
+    else
+    {
+        <p>No response data available.</p>
+    }
+    </div>
+    </body>
+    </html>

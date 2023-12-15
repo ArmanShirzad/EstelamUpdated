@@ -1,0 +1,83 @@
+﻿/* custom-style.css */
+
+/* Reset some default styles for better alignment */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a container for the content */
+.container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+/* Style the page header */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the response details */
+.response-details {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
+   text-align: right;
+   direction: rtl;
+
+}
+
+/* Style the "بله" and "خیر" text */
+.yes {
+    color: green;
+    font-weight: bold;
+}
+
+.no {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Style the list container */
+.list-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Style the list header */
+.list-header {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style individual list items */
+.list-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+}
+
+    /* Style the text within each list item */
+    .list-item p {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    /* Add spacing between list items */
+    .list-item + .list-item {
+        margin-top: 10px;
+    }
+.right-align-button {
+    text-align: right;
+}

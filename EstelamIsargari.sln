@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstelamIsargari", "EstelamIsargari.csproj", "{D801C261-B76E-4DAF-A237-B099F58B6231}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstelamIsargari-mvc", "..\EstelamIsargari-mvc\EstelamIsargari-mvc.csproj", "{27190EF8-CED5-4046-90BF-0FEBE5042816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D801C261-B76E-4DAF-A237-B099F58B6231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D801C261-B76E-4DAF-A237-B099F58B6231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D801C261-B76E-4DAF-A237-B099F58B6231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D801C261-B76E-4DAF-A237-B099F58B6231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27190EF8-CED5-4046-90BF-0FEBE5042816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27190EF8-CED5-4046-90BF-0FEBE5042816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27190EF8-CED5-4046-90BF-0FEBE5042816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27190EF8-CED5-4046-90BF-0FEBE5042816}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66E19722-AAE9-40C9-83D4-1F30D1896D4E}
+	EndGlobalSection
+EndGlobal
